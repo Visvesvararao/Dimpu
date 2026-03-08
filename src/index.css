@@ -1,0 +1,561 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* -------- Fonts -------- */
+
+@font-face{
+  font-family:yellowtail;
+  src:url(./assets/Yellowtail/Yellowtail-Regular.ttf);
+}
+
+@font-face{
+  font-family:poppins;
+  src:url(./assets/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face{
+  font-family:astral;
+  src:url(./assets/Easter\ Fabulous\ Italic\ Demo.ttf);
+}
+
+@font-face{
+  font-family:moving;
+  src:url(./assets/Moving.otf);
+}
+
+/* -------- Body -------- */
+
+body{
+  background-image:url(../src/assets/Dimpu/Pink\ paw\ prints\ and\ stars\ pattern.png);
+  overflow-x:hidden;
+  padding-bottom:4vh;
+  max-width: 100vw;
+}
+
+/* -------- Main Container -------- */
+
+#maindiv{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4vh;
+}
+
+/* -------- Heading Section -------- */
+
+#heading_container{
+  display:flex;
+  height: 40vh;
+  z-index: 7;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  padding: 0vh 4vh 0vh 4vh;
+  background:rgba(0,0,0,0.15);   
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  
+  border-radius:20vh;
+  
+  border:1px solid white;
+  
+  box-shadow:
+  0 8px 30px rgba(0,0,0,0.6),
+  0 0 20px rgba(255,105,180,0.3);
+  
+  text-align:center;
+}
+#longLive{
+  color: white;
+  font-size: 2vh;
+  padding: 3vh 4vh 3vh 4vh;
+  display: flex;
+  background:rgba(0,0,0,0.15);   
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  
+  border-radius:20vh;
+  
+  border:1px solid white;
+  
+  box-shadow:
+  0 8px 30px rgba(0,0,0,0.6),
+  0 0 20px rgba(255,105,180,0.3);
+  
+  text-align:center;
+}
+
+#hello_heading{
+  font-size:18vh !important;
+  font-family:astral;
+  
+  color:white;
+  
+  padding:10px 30px;
+  
+}
+
+#dimpu_heading{
+  font-family:yellowtail;
+  font-size:3vw;
+}
+
+#dimpu_heading::first-letter{
+  font-size:10vw;
+  color:#ff007a;
+}
+
+/* -------- Image + Paragraph Section -------- */
+
+#firstparaandimagecontainer{
+  width:100%;
+  display:flex;
+  flex-direction: row !important;
+  justify-content:center;
+  align-items:center;
+  gap:4vh;
+  flex-wrap:wrap;
+}
+
+#firstParagraph_container{
+  width:60% !important;
+  min-height:40vh;
+
+  background:linear-gradient(135deg,#ffc0d6,#ffd6e7);
+  border-radius:4vh;
+  padding:3vh;
+
+  border:0.4vh solid #ff9ec4;
+
+  box-shadow:0px 10px 25px rgba(0,0,0,0.15);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  font-size:3vh;
+  font-family:poppins;
+
+  color:#5a0032;
+}
+
+/* -------- Paragraph Section -------- */
+
+#paragraphDiv{
+  width:100%;
+  font-size: 4vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#paragraph2{
+  width:95%;
+
+  background:linear-gradient(135deg,#ff9ec4,#ff6fa6);
+  color:white;
+
+  padding:4vh;
+
+  border-radius:3vh;
+
+  border:0.4vh solid #ffb6d4;
+
+  font-family:poppins;
+
+  box-shadow:0px 12px 30px rgba(0,0,0,0.2);
+
+  text-shadow:0px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* -------- Eyes Section -------- */
+
+#eyesContainer{
+  width:100%;
+  padding:6vh 0;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3vh;
+}
+
+#eyesContainer img{
+  width:95%;
+  max-width:900px;
+
+  border:0.6vh solid #ff9ec4;
+
+  box-shadow:0px 10px 25px rgba(0,0,0,0.25);
+
+  transition:0.3s;
+}
+
+#eyesContainer img:hover{
+  transform:scale(1.02);
+}
+
+#eyesParagraph{
+  width:95%;
+  max-width:900px;
+
+  font-size:3.2vh;
+
+  background:linear-gradient(135deg,#fff0f6,#ffd6e7);
+
+  padding:3vh;
+
+  border-radius:3vh;
+
+  border:0.4vh solid #ff9ec4;
+
+  font-family:poppins;
+
+  color:#4a0030;
+
+  box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+}
+
+#eyesParagraph span{
+  color:#ff3f8e;
+  font-weight:bold;
+}
+
+/* -------- Funny Section -------- */
+
+#funny1Container{
+  width:90vw;
+  /* padding:6vh 0; */
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3vh;
+}
+
+#funny1Container p{
+  font-size:4vh;
+  font-family:poppins;
+
+  background:linear-gradient(135deg,#ffc0d6,#ffd6e7);
+  padding:2vh 4vh;
+
+  border-radius:3vh;
+
+  border:0.4vh solid #ff9ec4;
+
+  box-shadow:0px 10px 20px rgba(0,0,0,0.15);
+
+  color:#5a0032;
+}
+#messiVideo{
+  width: 90%;
+  border: 1vh solid pink;
+}
+
+/* -------- Videos -------- */
+
+.videosContainer{
+  width:100%;
+  /* gap: 2vh; */
+  display:flex;
+  align-items: center;
+  /* gap:3vh; */
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  
+}
+
+.videos{
+  width:24% !important;
+  /* max-width:450px; */
+  margin-bottom: 2vh;
+
+  border-radius:3vh;
+
+  border:0.6vh solid #ff9ec4;
+
+  box-shadow:0px 10px 25px rgba(0,0,0,0.25);
+
+  transition:0.3s;
+}
+
+.videos:hover{
+  transform:scale(1.05);
+}
+
+/* -------- Countdown -------- */
+
+#countDownContainer{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:25px;
+}
+#countdownHeading{
+  display:inline-block;
+
+  margin:50px auto;
+  padding:15px 35px;
+
+  font-size:34px;
+  font-family:poppins;
+  font-weight:600;
+
+  color:#5a0032;
+
+  text-align:center;
+
+  background:linear-gradient(135deg,#ffd6e7,#ff9ec4);
+
+  border-radius:40px;
+
+  border:3px solid #ff7ab6;
+
+  box-shadow:
+  0 10px 25px rgba(255,0,128,0.3),
+  0 0 20px rgba(255,105,180,0.4);
+
+  text-shadow:0 1px 3px rgba(255,255,255,0.5);
+
+  letter-spacing:1px;
+
+  transition:all 0.3s ease;
+}
+
+#countdownHeading:hover{
+  transform:scale(1.05);
+
+  box-shadow:
+  0 15px 35px rgba(255,0,128,0.5),
+  0 0 30px rgba(255,105,180,0.6);
+}
+
+.timeBox{
+  width:120px;
+  height:120px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  background:#ff4d88;
+  color:white;
+
+  border-radius:15px;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.number{
+  font-size:40px;
+  font-weight:bold;
+}
+
+.label{
+  font-size:14px;
+}
+
+/* -------- Message Section -------- */
+
+#messageContainer{
+  width:60vw;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  gap:20px;
+
+  margin:60px auto;
+
+  padding:30px;
+
+  background:linear-gradient(135deg,#ffd6e7,#ffc2dc);
+
+  border-radius:20px;
+
+  box-shadow:0 10px 30px rgba(255,105,180,0.3);
+}
+
+#textareaa{
+  width:100%;
+  height:120px;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#fff0f6;
+}
+
+#sendButton{
+  padding:12px 28px;
+
+  border:none;
+
+  border-radius:30px;
+
+  color:white;
+
+  background:linear-gradient(90deg,#ff4da6,#ff1a75);
+
+  cursor:pointer;
+}
+
+/* -------- Image Section -------- */
+
+#MainImage{
+  width:95%;
+  height:320px;
+
+  margin:50px auto;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:linear-gradient(135deg,#ffd6e7,#ffc0da);
+
+  border:3px dashed #ff4da6;
+
+  border-radius:20px;
+
+  box-shadow:0 10px 25px rgba(255,0,128,0.3);
+}
+
+#heading{
+  font-size:22px;
+
+  color:#b30059;
+
+  background:rgba(255,255,255,0.6);
+
+  padding:10px 20px;
+
+  border-radius:10px;
+}
+
+/* -------- Tablet -------- */
+
+@media(min-width:900px){
+
+#firstparaandimagecontainer{
+  flex-direction:column;
+}
+
+#firstParagraph_container{
+  width:90%;
+}
+
+#hello_heading{
+  font-size:22vw;
+}
+
+#dimpu_heading{
+  font-size:10vw;
+}
+#messageContainer{
+  width:90vw;
+}
+.videos{
+  width: 45vw;
+}
+#messiVideo{
+  width: 95vw;
+}
+
+}
+
+/* -------- Mobile -------- */
+
+@media(max-width:600px){
+  
+  .timeBox{
+    width:90px;
+    height:90px;
+  }
+  #messiVideo{
+    width: 95vw;
+  }
+  #messageContainer{
+  width:95vw;
+}
+.videos{
+  width: 95%;
+}
+
+.number{
+  font-size:28px;
+}
+
+#funny1Container p{
+  font-size:3vh;
+}
+#firstparaandimagecontainer{
+  flex-direction: column;
+}
+#firstParagraph_container{
+  width: 95vw !important;
+}
+.points{
+  width: 95vw ;
+}
+#paragraph2,#eyesParagraph{
+  font-size: 2.5vh;
+}
+
+
+}
+.points{
+  width:85%;
+  margin:40px auto;
+
+  text-align:center;
+
+  font-size:3.2vh;
+  font-family:poppins;
+
+  padding:2vh 3vh;
+
+  color:white;
+
+  background:linear-gradient(135deg,#ff9ec4,#ff4da6);
+
+  border-radius:30px;
+
+  border:0.4vh solid #ffc2db;
+
+  box-shadow:
+  0 10px 25px rgba(255,0,120,0.3),
+  0 0 20px rgba(255,105,180,0.4);
+
+  text-shadow:0px 2px 5px rgba(0,0,0,0.4);
+
+  transition:0.3s ease;
+}
+
+.points span{
+  color:#ffe4f2;
+  font-weight:bold;
+  font-size:1.1em;
+
+  text-shadow:0 0 10px #ffb6d9;
+}
+
+.points:hover{
+  transform:scale(1.03);
+  box-shadow:
+  0 15px 35px rgba(255,0,120,0.5),
+  0 0 30px rgba(255,105,180,0.6);
+}
