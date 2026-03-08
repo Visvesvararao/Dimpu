@@ -2,11 +2,11 @@ import React from 'react'
 import Background from './Background'
 import Paragraph from './component/Paragraph'
 import LogoLoop from './component/LogoLoop/LogoLoop';
-import dimpuImg1 from '../src/assets/Dimpu/mirror1.jpg';
-import dimpuImg2 from '../src/assets/Dimpu/mirror3.jpg';
-import parkImage from '../src/assets/Dimpu/parkImage.jpg';
-import pookie from '../src/assets/Dimpu/pookie.jpg';
-import selfie1 from '../src/assets/Dimpu/selfie1.jpg';
+import dimpuImg1 from './assets/Dimpu/mirror1.jpg';
+import dimpuImg2 from './assets/Dimpu/mirror3.jpg';
+import parkImage from './assets/Dimpu/parkImage.jpg';
+import pookie from './assets/Dimpu/pookie.jpg';
+import selfie1 from './assets/Dimpu/selfie1.jpg';
 import Paragraph1 from './Paragraph1';
 import Eyes from './Eyes';
 import Funny1 from './Funny1';
