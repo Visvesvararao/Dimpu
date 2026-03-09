@@ -58,6 +58,8 @@ body{
   background:rgba(0,0,0,0.15);   
   backdrop-filter:blur(12px);
   -webkit-backdrop-filter:blur(12px);
+  animation: slideUp 0.8s ease-out forwards;
+
   
   border-radius:20vh;
   
@@ -119,6 +121,9 @@ body{
   align-items:center;
   gap:4vh;
   flex-wrap:wrap;
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 #firstParagraph_container{
@@ -153,6 +158,9 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 #paragraph2{
@@ -162,6 +170,9 @@ body{
   color:white;
 
   padding:4vh;
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 
   border-radius:3vh;
 
@@ -184,11 +195,15 @@ body{
   flex-direction:column;
   align-items:center;
   gap:3vh;
+  
 }
 
 #eyesContainer img{
   width:95%;
   max-width:900px;
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 
   border:0.6vh solid #ff9ec4;
 
@@ -220,6 +235,9 @@ body{
   color:#4a0030;
 
   box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 #eyesParagraph span{
@@ -257,6 +275,9 @@ body{
 #messiVideo{
   width: 90%;
   border: 1vh solid pink;
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 /* -------- Videos -------- */
@@ -276,6 +297,9 @@ body{
 .videos{
   width:24% !important;
   /* max-width:450px; */
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   margin-bottom: 2vh;
 
   border-radius:3vh;
@@ -308,6 +332,9 @@ body{
   font-size:34px;
   font-family:poppins;
   font-weight:600;
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 
   color:#5a0032;
 
@@ -353,6 +380,9 @@ body{
   border-radius:15px;
 
   box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .number{
@@ -384,6 +414,9 @@ body{
   border-radius:20px;
 
   box-shadow:0 10px 30px rgba(255,105,180,0.3);
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 #textareaa{
@@ -432,6 +465,9 @@ body{
   border-radius:20px;
 
   box-shadow:0 10px 25px rgba(255,0,128,0.3);
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 #heading{
@@ -554,6 +590,9 @@ body{
   text-shadow:0px 2px 5px rgba(0,0,0,0.4);
 
   transition:0.3s ease;
+  animation: slideUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .points span{
@@ -569,4 +608,18 @@ body{
   box-shadow:
   0 15px 35px rgba(255,0,120,0.5),
   0 0 30px rgba(255,105,180,0.6);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0.5;
+    scale: 0.8;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
 }
