@@ -34,7 +34,7 @@ const App = () => {
         logos={imageLogos}
         speed={100}
         direction="left"
-        logoHeight={400}
+        logoHeight={350}
         gap={40}
         hoverSpeed={0}
         scaleOnHover
