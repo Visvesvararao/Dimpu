@@ -1,5 +1,5 @@
 import React from 'react'
-import messi from './assets/Dimpu/video project.mp4'
+import messi from './assets/Dimpu/Video Project.mp4'
 
 const Funny1 = () => {
   return (
