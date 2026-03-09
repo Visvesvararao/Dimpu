@@ -1,7 +1,6 @@
 import React from 'react'
 import song1 from './assets/Dimpu/song1.mov'
 import song2 from './assets/Dimpu/song2.mp4'
-import song3 from './assets/Dimpu/song3.mov'
 import dance1 from './assets/Dimpu/dimpudance.mp4'
 
 const Audios = () => {

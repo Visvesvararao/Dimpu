@@ -1,6 +1,6 @@
 import React from 'react'
 import TiltedCard from './TiltedCard/TiltedCard';
-import shirt from "../assets/Dimpu/dimpu_shirt.jpg";
+import shirt from "../assets/Dimpu/dimpu_shirt.JPG";
 
 const Paragraph = () => {
   return (

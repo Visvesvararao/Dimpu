@@ -1,8 +1,8 @@
 import React from 'react'
 import video1 from './assets/Dimpu/birthday.mov'
-import video2 from './assets/Dimpu/diva1.mov'
-import video3 from './assets/Dimpu/diva2.mov'
-import video4 from './assets/Dimpu/diva3.mov'
+import video2 from './assets/Dimpu/diva1.MOV'
+import video3 from './assets/Dimpu/diva2.MOV'
+import video4 from './assets/Dimpu/diva3.MOV'
 
 const Videos = () => {
   return (
