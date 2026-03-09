@@ -9,7 +9,7 @@ const CountDown = () => {
       const now = new Date();
       let year = now.getFullYear();
 
-      let targetDate = new Date(year, 7, 20); // March 20
+      let targetDate = new Date(year, 6, 20); // March 20
 
       if (now > targetDate) {
         targetDate = new Date(year + 1, 2, 20);
